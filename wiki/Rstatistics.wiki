@@ -1,8 +1,9 @@
 #summary One-sentence summary of this page.
 
-= Introduction =
+= Setup =
 
-Add your content here.
+ * Download R folder
+ * Customize .Rproject file...
 
 
 = Details =
