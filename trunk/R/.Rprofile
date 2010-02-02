@@ -5,11 +5,29 @@ cols <- c("red","yellow","green","blue","cyan","orange","pink","gray","lightblue
 
 #cols <- rainbow(30)
 
-outdir <- "/apps/www/vhosts/iside.it.pirelli.com/images/learninglab"
+#########################################################################
+# Folder where the charts wil be created
+#########################################################################
+outdir <- "."
 sqlsubdir <- "sqlfiles"
 
 width = 500
 height = 500
+
+#########################################################################
+# ODBC database parameter
+#########################################################################
+# example of odbc.ini file
+# [LEARNINGLAB]
+# Driver       = MySQL
+# Description  = MOODLEDB
+# Server       = localhost
+# Port         =
+# User         = 
+# Password     = 
+# Database     = MYDB
+# Option       = 3
+# Socket       =
 
 channel = odbcConnect("MOODLEDB", "user", "password")
 
