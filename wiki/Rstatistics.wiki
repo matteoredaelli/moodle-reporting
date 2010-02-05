@@ -1,14 +1,10 @@
-#summary One-sentence summary of this page.
-
 = Setup =
 
  * Download R folder
  * Customize .Rproject file...
 
+The naming convention of course names in my moodle installation is
 
-= Details =
+ CC_Course Name
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+where CC is the ISO code of countries like IT, DE, US, UK, ... 
