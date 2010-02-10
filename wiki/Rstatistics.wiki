@@ -3,8 +3,10 @@
  * Download R folder
  * Customize .Rproject file...
 
+
 The naming convention of course names in my moodle installation is
 
  CC_Course Name
 
-where CC is the ISO code of countries like IT, DE, US, UK, ... 
+where CC is the ISO code of the country like IT, DE, US, UK, ... 
+The reports are just an example, you can customize sql queries as you need
