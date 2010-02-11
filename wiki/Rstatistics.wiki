@@ -5,6 +5,7 @@ http://www.r-project.org/Rlogo.jpg
 = Setup =
  * only Unix: install unixodbc 
  * install mysql odbc package ( check packages for your preferred linux distribution) or download from http://dev.mysql.com/downloads/connector/odbc
+ * configure moodle odbc connection at operating system level (unix: files odbc.ini and odbcinst.ini, see http://moodle-reporting.googlecode.com/svn/trunk/R/.Rprofile)
  * Install R and Rodbc (http://cran.r-project.org/mirrors.html)
  * Download R folder
  * Customize .Rproject file...
