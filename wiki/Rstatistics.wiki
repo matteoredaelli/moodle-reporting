@@ -1,5 +1,11 @@
-= Setup =
+http://www.r-project.org/Rlogo.jpg
 
+[http://www.r-project.org/Rlogo.jpg R] is a free software environment for statistical computing and graphics. It compiles and runs on a wide variety of UNIX platforms, Windows and MacOS...
+
+= Setup =
+ * only Unix: install unixodbc 
+ * install mysql odbc package ( check packages for your preferred linux distribution) or download from http://dev.mysql.com/downloads/connector/odbc
+ * Install R and Rodbc (http://cran.r-project.org/mirrors.html)
  * Download R folder
  * Customize .Rproject file...
 
