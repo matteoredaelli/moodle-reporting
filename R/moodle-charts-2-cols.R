@@ -41,25 +41,22 @@ barchart(
          scales = list(x=list(rot=90))
          )
 
+for (column in c(1,2))
+{
+  
 #############################################################
-# pie - 1 column
+# pie - single columns
 #############################################################
-imagefile <- paste( outdir, "/",title,"-1-pie.png", sep="")
-bitmap(imagefile, width=width, height=height,units="px")
-records=table(sqlresult[[1]])
-labels = paste( names(records),records, round(records/sum(records) * 100,1), sep=", ")
-labels = paste( labels, "%", sep="")
-pie(records, labels=labels, col=cols)
+  
+  imagefile <- paste( outdir, "/",title,"-",column,"-pie.png", sep="")
+  bitmap(imagefile, width=width, height=height,units="px")
+  records=table(sqlresult[[column]])
+  labels = paste( names(records),records, round(records/sum(records) * 100,1), sep=", ")
+  labels = paste( labels, "%", sep="")
+  pie(records, labels=labels, col=cols)
 
-#############################################################
-# pie - 2 column
-#############################################################
-imagefile <- paste( outdir, "/",title,"-2-pie.png", sep="")
-bitmap(imagefile, width=width, height=height,units="px")
-records=table(sqlresult[[2]])
-labels = paste( names(records),records, round(records/sum(records) * 100,1), sep=", ")
-labels = paste( labels, "%", sep="")
-pie(records, labels=labels, col=cols)
+}
+
 
 #############################################################
 # barchart - 1 and 2 columns
