@@ -25,7 +25,8 @@ barchart(
          horizontal=FALSE,
          col=cols,
          stacked=TRUE,
-         scales = list(x=list(rot=90))
+         scales = list(x=list(rot=90)),
+         main = title
          )
 
 #############################################################
@@ -38,7 +39,8 @@ barchart(
          horizontal=FALSE,
          col=cols,
          stacked=TRUE,
-         scales = list(x=list(rot=90))
+         scales = list(x=list(rot=90)),
+         main = title
          )
 
 for (column in c(1,2))
@@ -53,7 +55,7 @@ for (column in c(1,2))
   records=table(sqlresult[[column]])
   labels = paste( names(records),records, round(records/sum(records) * 100,1), sep=", ")
   labels = paste( labels, "%", sep="")
-  pie(records, labels=labels, col=cols)
+  pie(records, labels=labels, col=cols, main=title)
 
 }
 
@@ -70,7 +72,8 @@ barchart(
          horizontal=FALSE,
          col=cols,
          stacked=TRUE,
-         scales = list(x=list(rot=90))
+         scales = list(x=list(rot=90)),
+         main = title
          ) 
   
 #############################################################
@@ -85,7 +88,8 @@ barchart(
          horizontal=FALSE,
          col=cols,
          stacked=TRUE,
-         scales = list(x=list(rot=90))
+         scales = list(x=list(rot=90)),
+         main = title
          )
 dev.off()
 
