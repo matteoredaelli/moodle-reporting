@@ -8,9 +8,9 @@ fullpathname<- args[6]
 a <-  strsplit(fullpathname, "/")[[1]]
 sqlfile <- a[length(a)]
 
-title = strsplit(sqlfile, "\\.")[[1]][1]
+title <- strsplit(sqlfile, "\\.")[[1]][1]
   
-text = readLines( fullpathname, n=-1)
+text <- readLines( fullpathname, n=-1)
 
 sqlstring <- paste(text,collapse=" ")
 sqlresult <- sqlQuery(channel, sqlstring)
