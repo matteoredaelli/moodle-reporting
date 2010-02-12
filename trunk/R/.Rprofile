@@ -29,7 +29,7 @@ height = 500
 # Option       = 3
 # Socket       =
 
-channel = odbcConnect("LEARNINGLAB", "backup", "backup")
+channel = odbcConnect("MOODLEDB", "root", "")
 
 .First <- function() {
 }
