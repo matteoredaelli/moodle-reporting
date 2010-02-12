@@ -8,7 +8,7 @@ cols <- c("red","yellow","green","blue","cyan","orange","pink","gray","lightblue
 #########################################################################
 # Folder where the charts wil be created
 #########################################################################
-outdir <- "."
+outdir <- "/tmp"
 sqlsubdir <- "sqlfiles"
 
 width = 500
@@ -29,7 +29,7 @@ height = 500
 # Option       = 3
 # Socket       =
 
-channel = odbcConnect("MOODLEDB", "user", "password")
+channel = odbcConnect("LEARNINGLAB", "backup", "backup")
 
 .First <- function() {
 }
