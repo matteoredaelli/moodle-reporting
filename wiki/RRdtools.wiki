@@ -1,0 +1,21 @@
+http://moodle-reporting.googlecode.com/svn/trunk/rrdtool/doc/moodle_users_web20_attributes-365days.png
+
+= Requirements =
+
+* [http://www.ruby-lang.org ruby]
+* ruby-mysql
+* ruby-dbi
+* [http://oss.oetiker.ch/rrdtool/ rrdtool]
+
+
+= Details =
+
+Create a rrd database with
+
+ moodle-rrd-create.sh
+
+Schedule each day the following scripts
+
+ * moodle-rrd-update.rb
+
+ * moodle-rrd-chart.sh
