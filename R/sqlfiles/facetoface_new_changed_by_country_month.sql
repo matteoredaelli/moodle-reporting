@@ -6,4 +6,5 @@ from
                 mdl_facetoface f
 where
                 c.fullname like '__\_%' and
-                f.course = c.id
+                f.course = c.id and
+                c.visible=1
