@@ -19,6 +19,7 @@ where
         u.auth = 'ldap' and
         gi.iteminstance = ", scormid,sep="")
 
+channel = odbcConnect("LEARNINGLAB", "root", "password")
 attendances <- sqlQuery(channel, sql_attendances)
 
 odbcClose(channel)
