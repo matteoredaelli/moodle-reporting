@@ -12,7 +12,6 @@ title <- strsplit(sqlfile, "\\.")[[1]][1]
   
 text <- readLines( fullpathname, n=-1)
 
-channel = odbcConnect("LEARNINGLAB", "root", "password")
 sqlstring <- paste(text,collapse=" ")
 sqlresult <- sqlQuery(channel, sqlstring)
 

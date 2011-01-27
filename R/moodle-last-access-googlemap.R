@@ -5,8 +5,6 @@ library(RODBC)
 args <- commandArgs()
 days <- args[6]
 
-channel = odbcConnect("LEARNINGLAB", "root", "password")
-
 sqlquery <- paste("select country, count(*) as visitors
 from mdl_user
 where
