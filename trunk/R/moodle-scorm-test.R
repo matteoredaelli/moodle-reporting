@@ -15,7 +15,6 @@ select max(cast(value as unsigned)) as max_score
 		scormid =",scormid,
 	" group by userid",sep="")
 
-channel = odbcConnect("LEARNINGLAB", "root", "password")
 attendances <- sqlQuery(channel, sql_attendances)
 
 odbcClose(channel)
